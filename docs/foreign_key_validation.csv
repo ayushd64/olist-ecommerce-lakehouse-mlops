@@ -1,0 +1,10 @@
+relationship,child_file,child_column,parent_file,parent_column,child_rows,null_foreign_key_rows,orphan_rows,distinct_orphan_keys,orphan_sample
+orders.customer_id -> customers.customer_id,olist_orders_dataset.csv,customer_id,olist_customers_dataset.csv,customer_id,99441,0,0,0,
+items.order_id -> orders.order_id,olist_order_items_dataset.csv,order_id,olist_orders_dataset.csv,order_id,112650,0,0,0,
+items.product_id -> products.product_id,olist_order_items_dataset.csv,product_id,olist_products_dataset.csv,product_id,112650,0,0,0,
+items.seller_id -> sellers.seller_id,olist_order_items_dataset.csv,seller_id,olist_sellers_dataset.csv,seller_id,112650,0,0,0,
+payments.order_id -> orders.order_id,olist_order_payments_dataset.csv,order_id,olist_orders_dataset.csv,order_id,103886,0,0,0,
+reviews.order_id -> orders.order_id,olist_order_reviews_dataset.csv,order_id,olist_orders_dataset.csv,order_id,99224,0,0,0,
+customers.zip -> geolocation.zip,olist_customers_dataset.csv,customer_zip_code_prefix,olist_geolocation_dataset.csv,geolocation_zip_code_prefix,99441,0,278,157,"72300, 11547, 64605, 72465, 07729"
+sellers.zip -> geolocation.zip,olist_sellers_dataset.csv,seller_zip_code_prefix,olist_geolocation_dataset.csv,geolocation_zip_code_prefix,3095,0,7,7,"82040, 91901, 72580, 02285, 07412"
+products.category -> translation.category,olist_products_dataset.csv,product_category_name,product_category_name_translation.csv,product_category_name,32951,610,13,2,"pc_gamer, portateis_cozinha_e_preparadores_de_alimentos"
