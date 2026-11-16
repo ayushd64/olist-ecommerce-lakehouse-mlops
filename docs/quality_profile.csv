@@ -1,0 +1,10 @@
+dataset,total_rows,duplicate_full_rows,duplicate_candidate_key_rows,null_candidate_key_rows,total_missing_values
+customers,99441,0,0.0,0.0,0
+orders,99441,0,0.0,0.0,4908
+order_items,112650,0,0.0,0.0,0
+payments,103886,0,0.0,0.0,0
+reviews,99224,0,1603.0,0.0,145903
+products,32951,0,0.0,0.0,2448
+sellers,3095,0,0.0,0.0,0
+geolocation,1000163,261831,,,0
+category_translation,71,0,0.0,0.0,0
